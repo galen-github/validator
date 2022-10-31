@@ -46,11 +46,17 @@ public @interface IdCard {
     /**
      * 身份证类型
      */
-    @Getter
-    @AllArgsConstructor(access = AccessLevel.PRIVATE)
     public static enum IdCardType{
         CHINA("(?:[16][1-5]|2[1-3]|3[1-7]|4[1-6]|5[0-4])\\d{4}(?:19|20)\\d{2}(?:(?:0[469]|11)(?:0[1-9]|[12][0-9]|30)|(?:0[13578]|1[02])(?:0[1-9]|[12][0-9]|3[01])|02(?:0[1-9]|[12][0-9]))\\d{3}[\\dX])\n");
         private final String pattern;
+
+        IdCardType(String pattern) {
+            this.pattern = pattern;
+        }
+
+        public String getPattern() {
+            return pattern;
+        }
     }
 
 }

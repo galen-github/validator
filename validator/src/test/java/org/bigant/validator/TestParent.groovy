@@ -1,13 +1,14 @@
 package org.bigant.validator
 
 import javax.validation.Validation
+import javax.validation.Validator
 
 
 class TestParent {
 
-    Validation getValidator(){
+    static Validator getValidator(){
         return Validation.buildDefaultValidatorFactory()
-                .getValidator() as Validation;
+                .getValidator();
     }
 
 }

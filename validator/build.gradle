@@ -12,6 +12,7 @@ dependencies {
     implementation 'org.projectlombok:lombok:1.18.22'
     implementation 'org.hibernate:hibernate-validator:5.4.3.Final'
     implementation 'javax.validation:validation-api:2.0.1.Final'
+    testImplementation 'junit:junit:4.13.1'
 }
 
 test {
