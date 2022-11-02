@@ -10,9 +10,11 @@ repositories {
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.22'
-    implementation 'org.hibernate:hibernate-validator:5.4.3.Final'
+    implementation 'org.hibernate:hibernate-validator:5.4.3.Fi nal'
     implementation 'javax.validation:validation-api:2.0.1.Final'
+    runtimeOnly 'org.glassfish:javax.el:3.0.1-b08'
     testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.codehaus.groovy:groovy-all:3.0.13'
 }
 
 test {
